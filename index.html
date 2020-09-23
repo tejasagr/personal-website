@@ -1,10 +1,42 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My Website Home Page</title>
+        <link rel="stylesheet" href="styles/styles.css">
+        <script type="text/javascript" src="scripts/main.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <title>Tejas Agrawal</title>
     </head>
-    <body>
-        <h1>Welcome to my website</h1>
-        <p>Now hosted on Amazon S3!</p>
+    <body class="no-margin">
+        <div class="intro">
+            <div class="text" id="textbox">
+                <div class='name'>Tejas Agrawal</div>
+                <div class="socials">
+                    <button onclick=window.open('https://www.linkedin.com/in/tejasagrawal/','_blank')>LinkedIn</button>
+                    <button onclick=window.open('https://www.github.com/tejasagr','_blank')>GitHub</button>
+                    <button onclick=window.open('mailto:tejas.agrawal@nyu.edu','_blank')>Email</button>
+                </div> 
+                <div class="summary">
+                    I’m a senior at New York University (NYU), majoring in Computer Science and minoring in Business Studies and 
+                    Mathematics. I have great enthusiasm for all things tech, a knack for problem-solving, and I am a natural leader. 
+                    Specifically, I have experience in Web Development due to multiple internships and projects undertaken, and 
+                    experience in Machine Learning and Mobile Development due to an internship done at a fin-tech startup. The United 
+                    States is the sixth country I’ve lived in, as my childhood consisted of moving frequently. I feel that this lifestyle 
+                    has made me adaptable and I hope to make use of my unique nomadic experiences in this increasingly globalized world.
+                </div>
+            </div>
+            <div id="hs" class="headshot">
+                <img src="images/headshot-small.png">
+            </div>
+        </div>
+
+        <script>
+            let windowHeight = $(window).height();
+            let windowWidth = $(window).width();
+            let textboxWidth = windowWidth - windowHeight;
+            
+            $(".text").outerHeight(windowHeight);
+            $(".text").outerWidth(textboxWidth);
+        </script>
+
     </body>
 </html>

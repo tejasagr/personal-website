@@ -1,0 +1,29 @@
+.no-margin {
+    margin: 0%;
+}
+
+.text {
+    text-align: center;
+    height: 100vh;
+    float: left;
+    padding: 3%;
+    background-color: rgb(253, 208, 177);
+}
+
+.name {
+    font-family: 'Bebas Neue';
+    font-size: 72px;;
+}
+
+.summary {
+    font-family: 'Open Sans Light';
+}
+
+.headshot {
+    height: 100vh;
+    float: right;
+}
+
+.headshot img {
+    height: 100%;
+}
