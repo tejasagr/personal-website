@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles/old_styles.css">
+        <script type="text/javascript" src="scripts/old_main.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <title>Tejas Agrawal</title>
+    </head>
+    <body class="no-margin">
+        <div class="intro">
+            <div class="textWrapper">
+                <div class="textBox">
+                    <div class='name'>Tejas Agrawal</div>
+                    <div class="socials">
+                        <a class="darken" href='https://linkedin.com/in/tejasagrawal' target=”_blank”><img class="social" src="images/linkedin.png"></a>
+                        <a class="darken" href='https://www.github.com/tejasagr' target=”_blank”><img class="social" src="images/github.png"></a>
+                        <a class="darken" href='mailto:tejas.agrawal@nyu.edu' target=”_blank”><img class="social" src="images/email.png"></a>
+                    </div> 
+                    <div class="summary">
+                        I’m a senior at New York University (NYU), majoring in Computer Science and minoring in Business Studies and 
+                        Mathematics. I have great enthusiasm for all things tech, a knack for problem-solving, and I am a natural leader. 
+                        Specifically, I have experience in Web Development due to multiple internships and projects undertaken, and 
+                        experience in Machine Learning and Mobile Development due to an internship done at a fin-tech startup. The United 
+                        States is the sixth country I have lived in, as my childhood consisted of moving frequently. I feel that this lifestyle 
+                        has made me adaptable and I hope to make use of my unique nomadic experiences in this increasingly globalized world.
+                    </div>
+                        <br><br>
+                        <a class="resume" target="_blank" href="https://drive.google.com/file/d/1Z5PKHtxz6qbHsb_FiXF1rP5rtp_oHrwS/view?usp=sharing">View Resume</a>
+                </div>
+            </div>
+            <div class="headshot">
+                <img src="images/headshot-small.png">
+            </div>
+        </div>
+
+        <script>
+            let windowHeight = $(window).height();
+            let windowWidth = $(window).width();
+            let textboxWidth = windowWidth - windowHeight;
+            
+            $(".headshot").outerHeight(windowHeight).outerWidth(windowHeight).css({'left':textboxWidth});
+            $(".textWrapper").outerHeight(windowHeight).outerWidth(textboxWidth);
+            $(".textBox").outerWidth(textboxWidth*0.8).css({'left':textboxWidth*0.1});
+            
+            $(".textBox").css( {
+                'top': (windowHeight-$(".textBox").outerHeight())/2,
+            })
+
+            $( window ).resize(function() {
+                let windowHeight = $(window).height();
+                let windowWidth = $(window).width();
+                let textboxWidth = windowWidth - windowHeight;
+                
+                $(".headshot").outerHeight(windowHeight).outerWidth(windowHeight).css({'left':textboxWidth});
+                $(".textWrapper").outerHeight(windowHeight).outerWidth(textboxWidth);
+                $(".textBox").outerWidth(textboxWidth*0.8).css({'left':textboxWidth*0.1});
+                
+                $(".textBox").css( {
+                    'top': (windowHeight-$(".textBox").outerHeight())/2,
+                })
+            });
+        </script>
+
+    </body>
+</html>

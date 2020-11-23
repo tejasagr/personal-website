@@ -1,2 +1,8 @@
-let width = window.innerWidth;
-document.getElementById("hs").width = "10";
+window.addEventListener('load', function() {
+    const navbarHeight = $('.navbar').outerHeight();
+    $('.intro').outerHeight($(window).height() - navbarHeight);
+    $('#Education').outerHeight($(window).height() - navbarHeight);
+    $( ".nav_filler" ).each(function() {
+        this.outerHeight(navbarHeight);
+    });
+})
