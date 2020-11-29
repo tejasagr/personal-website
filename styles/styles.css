@@ -14,7 +14,7 @@
 }
 
 .contact {
-    background-color: rgb(66, 248, 157);
+    background-color: rgb(38, 212, 125);
     border-radius: 7px;
     padding: 6px;
     text-align: center;
@@ -24,7 +24,7 @@
 }
 
 .contact:hover {
-    background-color: white;
+    background-color: rgb(44, 255, 150);
     color: black;
     text-decoration: none;
 }
@@ -34,10 +34,55 @@
 }
 
 .social {
-    height: 40px;
+    height: 35px;
+    margin-right: 5px;
+}
+
+.social:hover {
+    -webkit-filter: brightness(120%); 
 }
 
 .section {
     height: 100vh;
     background-color: rgb(225, 243, 255);
+}
+
+.btn-primary {
+    background-color: rgb(38, 212, 125);
+    border: none;
+    color: black;
+}
+
+.btn-primary:hover {
+    background-color: rgb(44, 255, 150);
+    color: black;
+}
+
+.sublink {
+    color: rgb(38, 212, 125);
+    font-size: small;
+}
+
+.sublink:hover {
+    color: rgb(44, 255, 150);
+}
+
+.sectionHeader {
+    color: rgb(225, 243, 255);
+    font-size: 20px;
+    padding: 4px;
+}
+
+.sectionHeader:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.undo_a {
+    color: black;   
+}
+
+.undo_a:hover {
+    text-decoration: none;
+    color: black;   
 }
